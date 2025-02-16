@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Clothing Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Clothing Store</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <img id="mainImage" src="" alt="Product Image">
+                    <div class="thumbnail-container">
+                        <!-- Additional product images -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2 id="productName"></h2>
+                    <p class="price">$<span id="productPrice"></span></p>
+                    <p id="productDescription"></p>
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <label>Size:</label>
+                            <select id="sizeSelect">
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                            </select>
+                        </div>
+                        <button id="addToCartBtn" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h3>Related Products</h3>
+                <div class="product-list">
+                    <!-- Related products will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

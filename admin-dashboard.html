@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Clothing Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Admin Dashboard</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="profit-chart">
+            <h2>Sales & Profit</h2>
+            <div class="chart-container">
+                <canvas id="profitChart"></canvas>
+            </div>
+        </section>
+
+        <section id="admin-products">
+            <h2>Manage Products</h2>
+            <div class="product-list">
+                <!-- Product items will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
